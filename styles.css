@@ -1,0 +1,570 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Botones*/
+.button {
+    padding: 12px 24px;
+    background: #3a3a3a;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+.main-article1 .button {
+    position: relative;
+    z-index: 2;
+    margin-top: 32px;
+    font-size: 1rem;
+    padding: 14px 32px;
+}
+
+.button:hover {
+    background: #1a1a1a;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: #3a3a3a;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.2s;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.scroll-top-btn:hover {
+    background: #1a1a1a;
+}
+
+/*Aqui empieza el Header*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 24px 2vw; 
+    background: #131312;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 100%;    
+}
+
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-left,
+.header-right {
+    flex: 1;
+}
+
+.header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+    margin-left: 0; 
+}
+
+.login, .login1, .login2, .login3 {
+    padding: 8px 18px;
+    background: #3a3a3a;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.login:hover, .login1:hover, .login2:hover, .login3:hover {
+    background: #1a1a1a;
+}
+
+.register, .about, .contact, .products {
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.register:hover, .about:hover, .contact:hover, .products:hover {
+    color: #3a3a3a;
+}
+/*Aqui termine el Header*/
+
+body{
+    background: #ebebeb;
+}
+
+/* Aqui empieza el Main */
+main{
+    padding: 40px 20px;
+    background: #000000;
+    background-image: url(background.mp4);
+    color: #ffffff;
+}
+.main-article1 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+    min-height: 700px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-article1 .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+.main-article1 h1,
+.main-article1 p {
+    position: relative;
+    z-index: 1;
+}
+.main-article1 h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 4vw; 
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    margin: 0;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.5); 
+}
+/*Aqui termina el main*/
+
+/*footer*/
+
+.index-footer {
+    background: #000000;
+    color: #3f3f3f;
+    padding: 12px 2vw;
+    text-align: left;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.index-footer p {
+    margin: 4px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/*About*/
+
+.register1, .contact1, .products1 {
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.register1:hover, .about1:hover, .contact1:hover, .products1:hover {
+    color: #3a3a3a;
+}
+.about1 {
+    color: #000000;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.about1:hover {
+    color: #555;
+}
+
+.about-main {
+    padding: 0;           
+    background: #ebebeb;
+    color: #242424;
+}
+
+.about-banner {
+    width: 100vw;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+#quienes-somos {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 60px 0 20px;    
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.about-row {
+    display: flex;
+    align-items: flex-start;    
+    gap: 40px; 
+    margin: 40px;
+}
+
+.about-us-image {
+    width: 280px;
+    border-radius: 12px;
+    display: block;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 16px;
+}
+
+.about-us {
+    flex: 1; 
+    padding: 20px;
+    background: #dbdbdb;
+    border-radius: 12px;
+    margin-top: 1px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.about-us h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-top: 0px;
+}
+
+.about-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.about-mision-image {
+    width: 280px;
+    border-radius: 12px;
+    display: block;
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.about-vision-image {
+    width: 280px;
+    border-radius: 12px;
+    display: block;
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 27px;
+}
+/* about footer */
+
+.about-footer {
+    background: #131312;
+    color: #ffffff;
+    padding: 12px 2vw;
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.about-footer p {
+    margin: 4px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* aqui termina about.html*/
+    /*estoy cansado jefe*/
+/* aqui empieza contact.html */
+
+.register2, .about2, .products2 {
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.register2:hover, .about2:hover, .products2:hover {
+    color: #3a3a3a;
+}
+
+.contact2 {
+    color: #000000;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact2:hover {
+    color: #555;
+}
+/*Aqui termina el header*/
+/*main*/
+
+.contact-main {
+    background: #dbdbdb;
+    padding: 40px 0;
+    color: #000000;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el contenido si es necesario */
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.contact-info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin-bottom: -20px;
+    margin-top : -17px;
+    color: #444;
+}
+
+.contact-btn img {
+    display: block;
+    margin: 0px;
+    margin-left: -40px;
+    margin-top:0px;
+    height: 150px;
+    width: auto;
+    padding: 0px;
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 320px;
+    max-width: 700px;
+    height: 500px; 
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-top: 70px;
+}
+
+
+
+.telf {
+    color: #000000;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.telf:hover {
+    color: #555;
+}
+
+#primera-sucursal{
+    margin-top: -20px;
+}
+
+#direccion{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-social {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #000000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.contact-social h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.contact-social a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.contact-social a:hover {
+    color:#3a3a3a;
+    text-decoration: underline;
+}
+
+.contact-footer{
+    background: #131312;
+    color: #ffffff;
+    padding: 12px 2vw;
+    text-align: center;
+}
+
+.contact-footer p {
+    margin: 4px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+/* Aqui termina contact.html */
+
+
+/* Aqui empieza products.html */
+.register3, .about3, .contact3 {
+    color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.register3:hover, .about3:hover, .contact3:hover {
+    color: #3a3a3a;
+}
+
+.products3 {
+    color: #000000;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.products3:hover {
+    color: #555;
+}
+
+/*main*/
+
+.products-section {
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0078d7;
+}
